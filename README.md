@@ -1,11 +1,12 @@
-#Tfl Journey Planner Automation
+
+# Tfl Journey Planner Automation
 For automating Tfl UI using c#, .Net, Specflow and Nunit
 
 
-##Configure variables
+## Configure variables
 Setting all the variables in appsettings.json
 
-##BDD
+## BDD
 
 ### Hooks 
 Hooks (event bindings) can be used to perform additional automation logic at specific times, such as any setup required prior to executing a scenario. In order to use hooks, you need to add the Binding attribute to your class:
