@@ -19,7 +19,7 @@ namespace Tfl
             driver.Manage().Window.Maximize();
             driver.FindElement(By.Id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")).Click();
             driver.FindElement(By.XPath(".//button[contains(@onclick, 'endCookieProcess()')]")).Click();
-           
+           // driver.Manage().Cookies.AddCookie(Cookie c);
         }
     }
 }
