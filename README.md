@@ -31,3 +31,6 @@ We use tag scoping to filter the scenarios. We tagged as
 
 ## Execution Report
  We use Extended Report to generate Html Dashboard. After completing execution we will get an Html report with all the test results.
+ > 
+![Screenshot 2022-08-27 034715](https://user-images.githubusercontent.com/29451624/187011339-6e6e884e-bd57-4d6f-b4b3-1f4b5259145f.png)
+
