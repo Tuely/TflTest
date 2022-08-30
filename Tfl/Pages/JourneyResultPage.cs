@@ -18,7 +18,7 @@ namespace Tfl.Pages
         [FindsBy(How = How.ClassName, Using = "info-message")]
         private IWebElement InvalidLocationMessageText { get; set; }
 
-        [FindsBy(How = How.ClassName, Using = "field-validation-error")]
+        [FindsBy(How = How.XPath, Using = "//li[@class='field-validation-error']")]
         private IWebElement ErrorMessage { get; set; }
         [FindsBy(How = How.ClassName, Using = "edit-journey")]
         private IWebElement EditJourneyButton { get; set; }
@@ -42,6 +42,12 @@ namespace Tfl.Pages
             InvalidLocationMessageText.WaitUntilDisplayed();
             Assert.That(InvalidLocationMessageText.Text.Contains(message));
        }
+        public void ValidateErrorMessage(string message)
+        {
+            ErrorMessage.WaitUntilDisplayed();
+            Assert.That(ErrorMessage.Text.Contains(message));
+        }
+        
       public void SelectAJourneyFromList()
         {
             SelectJourneyFromList.WaitUntilDisplayed();

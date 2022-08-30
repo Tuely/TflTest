@@ -11,7 +11,7 @@ Scenario: Verify that a valid journey can be planned using the widget
 	Then I should navigate into results page
 
 Scenario: Verify that the widget is unable to provide results when an invalid journey is planned
-	Given I select an invalid journey from 'London' to 'London'
+	Given I select an invalid journey from 'Lon' to 'Brn'
 	When I click Plan my journey
 	Then I should get message 'We found more than one location matching'
 
@@ -37,3 +37,8 @@ Scenario: Verify that the “Recents” tab on the widget displays a list of rec
 	When I click Plan my journey
 	And I click on recents Tab
 	Then I Verify that the “Recents” tab on the widget displays a list of recently planned journeys
+
+	Scenario: Verify entering invalid place getting error message
+	Given I select an invalid journey from '123' to '123'
+	When I click Plan my journey
+	Then I should get an error  message 'Journey planner could not find any results to your search. Please try again'

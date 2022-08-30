@@ -75,7 +75,13 @@ namespace Tfl.Steps
         {
             _page.JourneyResultPage().InvalidLocationMessage(message);
         }
-              
+
+        [Then(@"I should get an error  message '([^']*)'")]
+        public void ThenIShouldGetAnErrorMessage(string message)
+        {
+            _page.JourneyResultPage().ValidateErrorMessage(message);
+        }
+
 
         [Then(@"I should get an error message '([^']*)' and '([^']*)'")]
         public void ThenIShouldGetAnErrorMessageAnd(string fromError, string toError)
