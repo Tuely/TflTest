@@ -21,7 +21,8 @@ namespace Tfl.Steps
         {
             _page.HomePage().EnterJourney(from, to);
         }
-
+        
+        [Given(@"I select a new journey from '([^']*)' to '([^']*)'")]
         [Given(@"I select an invalid journey from '([^']*)' to '([^']*)'")]
         public void GivenISelectAnInvalidJourneyFromTo(string from, string to)
         {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuely\\Downloads\\Tfl\\Tfl\\Tfl\\Tfl.csproj": {}
+    "C:\\Users\\tuely\\Downloads\\Tfl\\TflNew\\TflTest\\Tfl\\Tfl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuely\\Downloads\\Tfl\\Tfl\\Tfl\\Tfl.csproj": {
+    "C:\\Users\\tuely\\Downloads\\Tfl\\TflNew\\TflTest\\Tfl\\Tfl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuely\\Downloads\\Tfl\\Tfl\\Tfl\\Tfl.csproj",
+        "projectUniqueName": "C:\\Users\\tuely\\Downloads\\Tfl\\TflNew\\TflTest\\Tfl\\Tfl.csproj",
         "projectName": "Tfl",
-        "projectPath": "C:\\Users\\tuely\\Downloads\\Tfl\\Tfl\\Tfl\\Tfl.csproj",
+        "projectPath": "C:\\Users\\tuely\\Downloads\\Tfl\\TflNew\\TflTest\\Tfl\\Tfl.csproj",
         "packagesPath": "C:\\Users\\tuely\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuely\\Downloads\\Tfl\\Tfl\\Tfl\\obj\\",
+        "outputPath": "C:\\Users\\tuely\\Downloads\\Tfl\\TflNew\\TflTest\\Tfl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

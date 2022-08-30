@@ -25,6 +25,9 @@ namespace Tfl.Pages
         [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Plan a journey')]")]
         private IWebElement PlanJourneyLink { get; set; }
 
+        [FindsBy(How = How.XPath, Using = "//a[contains(@class, 'disambiguation-link')][1]")]
+        private IWebElement SelectJourneyFromList { get; set; }
+
         #endregion
 
         #region JourneyResultPage actions
@@ -39,9 +42,15 @@ namespace Tfl.Pages
             InvalidLocationMessageText.WaitUntilDisplayed();
             Assert.That(InvalidLocationMessageText.Text.Contains(message));
        }
-      
+      public void SelectAJourneyFromList()
+        {
+            SelectJourneyFromList.WaitUntilDisplayed();
+            SelectJourneyFromList.Click();
+            ValidJourneyResult();
+        }
         public void ReturnToPlanJourneyPage()
         {
+            SelectAJourneyFromList();
             PlanJourneyLink.ClickElement();
         }
         public void EditJourney()
