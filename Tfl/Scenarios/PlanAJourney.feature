@@ -1,10 +1,11 @@
-﻿Feature: PlanAJourney
+﻿@regression
+Feature: PlanAJourney
 As a tester 
 I want to test Plan a Journey feature
 Background:
 	Given I navigate into the Tfl Journey Planner page
 
-@regression
+@smoke
 Scenario: Verify that a valid journey can be planned using the widget
 	Given I select journey from 'Orpington, UK' to 'London Bridge'
 	When I click Plan my journey
@@ -25,6 +26,7 @@ Scenario: Verify change time link on the journey planner displays “Arriving”
 	And I change Arrival Time as 'Tomorrow' at '10:30'
 	Then I should navigate into results page
 
+@smoke
 Scenario: Verify On the Journey results page, verify that a journey can be amended by using the “Edit Journey” button.
 	Given I select journey from 'Orpington, UK' to 'London Bridge'
 	When I click Plan my journey
@@ -38,7 +40,7 @@ Scenario: Verify that the “Recents” tab on the widget displays a list of rec
 	And I click on recents Tab
 	Then I Verify that the “Recents” tab on the widget displays a list of recently planned journeys
 
-	Scenario: Verify entering invalid place getting error message
+Scenario: Verify entering invalid place getting error message
 	Given I select an invalid journey from '123' to '123'
 	When I click Plan my journey
 	Then I should get an error  message 'Journey planner could not find any results to your search. Please try again'
