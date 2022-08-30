@@ -31,11 +31,3 @@ Scenario: Verify On the Journey results page, verify that a journey can be amend
 	And In the result page amended by using the “Edit Journey” button
 	And I change Arrival Time as 'Tomorrow' at '10:30'
 	Then I should navigate into results page
-#
-#Scenario: Verify that the “Recents” tab on the widget displays a list of recently planned journeys.
-#	Given I select journey from 'Orpington, UK' to 'London Bridge'
-#	When I click Plan my journey
-#	And I click on recents Tab
-#	Given I select journey from 'Orpington, UK' to 'London Bridge'
-#	When I click Plan my journey
-#	Then I Verify that the “Recents” tab on the widget displays a list of recently planned journeys
